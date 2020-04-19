@@ -8,14 +8,14 @@
         <a-scene embedded arjs>
             <!-- handle hiro marker -->
             <a-marker preset='hiro'>
-                <a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:red;'>
-                    <!-- add a torus in a red box --> 
+                <a-box position='0 0 0' material='opacity: 0.5; side: double;color:red;'>
+                    <!-- add a sphere in the box --> 
                     <a-sphere radius='0.5' color='tomato'
                     animation="property: rotation; to:360 0 0; dur: 5000; easing: linear; loop: true">
                     </a-sphere>
-                    <!-- <a-entity bmfont-text="text: Task 1" scale="120 120 120"> </a-entity> -->
                 </a-box>
-                    <a-text value="Task 1" position='0 1.5 0' color="#111"></a-text>
+                    <!-- create a white text above the box -->
+                    <a-text value="Task 1" position='0 1.0 0' color="#255255255"></a-text>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
