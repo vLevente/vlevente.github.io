@@ -14,6 +14,8 @@
         {
           var elem = document.documentElement;
           var marker = document.querySelector("#marker");
+          var marker = document.querySelector("#marker2");
+          var marker = document.querySelector("#marker3");
           var fullbutton = document.querySelector("#fullscreen");
           var Video_0 = document.querySelector("#Video_Asset_0");
           var button = document.querySelector("#mutebutton");
@@ -33,6 +35,31 @@
             button.hidden = true;
           });
 
+          marker2.addEventListener("markerFound", function (evt) {
+            markerFound = 1;
+            button.hidden = false;
+            // Video_0.play();  // if you want the video 
+            // to start immediently on marker detection, uncomment this
+          });
+
+          marker2.addEventListener("markerLost", function (evt) {
+            markerFound = 0;
+            Video_0.pause();
+            button.hidden = true;
+          });
+
+          marker3.addEventListener("markerFound", function (evt) {
+            markerFound = 1;
+            button.hidden = false;
+            // Video_0.play();  // if you want the video 
+            // to start immediently on marker detection, uncomment this
+          });
+
+          marker3.addEventListener("markerLost", function (evt) {
+            markerFound = 0;
+            Video_0.pause();
+            button.hidden = true;
+          });
           // button for video play/pause
           button.addEventListener("click", function(evt){
             console.log("button clicked")
@@ -101,6 +128,7 @@
     <a-assets>
       <video id="Video_Asset_0" autoplay="false" loop crossorigin="anonymous" src="assets/video.mp4" webkit-playsinline playsinline controls muted></video>
     </a-assets>
+
     <a-marker id="marker" preset="hiro" emitevents="true" button>
       <a-video src="#Video_Asset_0" id="Video_0" class="intersectable" width="1" height="1" position="0 0 0" rotation="0 0 0" color="#FFFFFF" transparent=False></a-video>
     </a-marker>
@@ -111,7 +139,7 @@
     </a-marker>
 
     <!-- handle custom marker -->
-    <a-marker type='pattern' url='assets/pattern_kari_logo_small.patt' emitevents="true" button>
+    <a-marker id="marke3" type='pattern' url='assets/pattern_kari_logo_small.patt' emitevents="true" button>
         <a-video src="#Video_Asset_0" id="Video_0" class="intersectable" width="1" height="1" position="0 0 0" rotation="0 0 0" color="#FFFFFF" transparent=False></a-video>
     </a-marker>
 
