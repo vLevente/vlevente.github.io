@@ -18,7 +18,7 @@ function staticLoadPlaces() {
         {
             name: 'Articuno, Lv. 80, HP 100/100',
             location: {
-                lat: 47.41655122810682,
+                lat: 47.41655122810678,
                 lng: 18.8842261771816742,
             },
             gtlf: './assets/articuno/scene.gltf'
@@ -26,7 +26,7 @@ function staticLoadPlaces() {
         {
             name: 'Dragonite, Lv. 99, HP 150/150',
             location: {
-                lat: 47.41655122810683,
+                lat: 47.41655122810685,
                 lng: 18.8842261771816743,
             },
             gtlf: './assets/dragonite/scene.gltf'
