@@ -10,24 +10,24 @@ function staticLoadPlaces() {
         {
             name: 'Magnemite, Lv. 5, HP 10/10',
             location: {
-                lat: 48.10568369386877,
-                lng: 20.630873655174184,
+                lat: 47.41655122810681,
+                lng: 18.8842261771816741,
             },
             gtlf: './assets/magnemite/scene.gltf'
         },
         {
             name: 'Articuno, Lv. 80, HP 100/100',
             location: {
-                lat: 48.105621006434774,
-                lng: 20.631084208581854,
+                lat: 47.41655122810681,
+                lng: 18.8842261771816741,
             },
             gtlf: './assets/articuno/scene.gltf'
         },
         {
             name: 'Dragonite, Lv. 99, HP 150/150',
             location: {
-                lat: 48.10558339393768,
-                lng: 20.631230388973165,
+                lat: 47.41655122810681,
+                lng: 18.8842261771816741,
             },
             gtlf: './assets/dragonite/scene.gltf'
         },
